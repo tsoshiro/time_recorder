@@ -20,15 +20,3 @@ def time_recorder(func):
 
         return result
     return new_function
-
-# Samples
-@time_recorder
-def add_inits_with_wait(a, b, sec=0):
-    time.sleep(sec)
-    return a + b
-
-@time_recorder
-def wait_method(sec):
-	"""サンプルメソッド。引数の間待ち、「Done!」をprintする"""
-	time.sleep(sec)
-	print('Done!')
